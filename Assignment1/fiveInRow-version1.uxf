@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>210</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>/Game/
+--
+- gameBoard: GameBoard
+- players: List&lt;Player&gt;
+- currentColour: int
+--
++ Game(lengthX:int,lengthY:int)
++ move(x:int,y:int): void
++ Win(): Player</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>220</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>/GameBoard/
+--
+- board: int[][]
+- lengthX=15: int
+- lengthY=15: int
+--
++ GameBoard(lengthX,lengthY)
++ modifyBoard(Step): void
++ validMove(Step): boolean
++ drawBoard(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>500</y>
+      <w>190</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>/Step/
+--
+- x: int
+- y: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>260</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>220</y>
+      <w>190</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>/Player/
+--
+- stepList: List&lt;Step&gt;
+- currentStep: Step
+- colour: int
+- maxDisk: int=32
+--
++ placeDisk(Step): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>260</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>360</y>
+      <w>230</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;140.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>340</y>
+      <w>250</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>230.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>130</x>
+      <y>80</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>integer 1 is white stone, integer 2 is black stone
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>140</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
