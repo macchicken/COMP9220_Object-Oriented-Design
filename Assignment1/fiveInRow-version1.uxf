@@ -12,12 +12,13 @@
     <panel_attributes>/Game/
 --
 - gameBoard: GameBoard
-- players: List&lt;Player&gt;
+- players: Player[2]
 - currentColour: int
+- gameResult: String
 --
 + Game(lengthX:int,lengthY:int)
 + move(x:int,y:int): void
-+ Win(): Player</panel_attributes>
++ continue(): boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -35,16 +36,16 @@
 - lengthY=15: int
 --
 + GameBoard(lengthX,lengthY)
-+ modifyBoard(Step): void
-+ validMove(Step): boolean
++ modifyBoard(x:int,y:int): void
++ validMove(x:int,y:int): boolean
 + drawBoard(): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>500</y>
+      <x>90</x>
+      <y>460</y>
       <w>190</w>
       <h>70</h>
     </coordinates>
@@ -71,16 +72,18 @@
       <x>100</x>
       <y>220</y>
       <w>190</w>
-      <h>130</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>/Player/
 --
-- stepList: List&lt;Step&gt;
+- maxDisk: int=32
+- stepList: Step[maxDisk]
 - currentStep: Step
 - colour: int
-- maxDisk: int=32
+- stepCount: int
 --
-+ placeDisk(Step): void</panel_attributes>
++ placeDisk(x:int,y:int): void
+- runUpDisk():boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -97,24 +100,13 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
+      <x>160</x>
       <y>360</y>
-      <w>230</w>
-      <h>160</h>
+      <w>30</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;140.0;210.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>200</x>
-      <y>340</y>
-      <w>250</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>230.0;160.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
@@ -124,7 +116,7 @@
       <w>150</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>integer 1 is white stone, integer 2 is black stone
+    <panel_attributes>integer 0 is white stone, integer 1 is black stone
 bg=white</panel_attributes>
     <additional_attributes/>
   </element>

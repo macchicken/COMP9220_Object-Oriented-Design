@@ -175,24 +175,24 @@ m2=[ValidMove]</panel_attributes>
     <coordinates>
       <x>660</x>
       <y>570</y>
-      <w>60</w>
+      <w>130</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[Win]</panel_attributes>
+m2=[game has result]</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>500</x>
+      <x>540</x>
       <y>140</y>
-      <w>170</w>
-      <h>440</h>
+      <w>130</w>
+      <h>450</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m2=[no win players]</panel_attributes>
-    <additional_attributes>150.0;420.0;50.0;420.0;50.0;10.0;120.0;10.0</additional_attributes>
+m1=[continue]</panel_attributes>
+    <additional_attributes>110.0;420.0;10.0;420.0;10.0;10.0;80.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -205,5 +205,17 @@ m2=[no win players]</panel_attributes>
     <panel_attributes>lt=-&gt;
 m2=[not ValidMoved]</panel_attributes>
     <additional_attributes>10.0;100.0;170.0;100.0;170.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>230</y>
+      <w>170</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=[runUpDisk]</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;330.0;10.0;330.0</additional_attributes>
   </element>
 </diagram>
