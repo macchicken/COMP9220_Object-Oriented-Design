@@ -67,7 +67,7 @@ m2=[Game Start]</panel_attributes>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[Move]</panel_attributes>
+m2=[move]</panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -185,21 +185,21 @@ m2=[game has result]</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
+      <x>510</x>
       <y>140</y>
-      <w>130</w>
-      <h>450</h>
+      <w>160</w>
+      <h>440</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m1=[continue]</panel_attributes>
-    <additional_attributes>110.0;420.0;10.0;420.0;10.0;10.0;80.0;10.0</additional_attributes>
+m2=[continue]</panel_attributes>
+    <additional_attributes>140.0;420.0;40.0;420.0;40.0;10.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>680</x>
       <y>140</y>
-      <w>190</w>
+      <w>250</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
@@ -211,11 +211,11 @@ m2=[not ValidMoved]</panel_attributes>
     <coordinates>
       <x>680</x>
       <y>230</y>
-      <w>170</w>
-      <h>350</h>
+      <w>210</w>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m1=[runUpDisk]</panel_attributes>
+m2=[runUpDisk]</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0;150.0;330.0;10.0;330.0</additional_attributes>
   </element>
 </diagram>
