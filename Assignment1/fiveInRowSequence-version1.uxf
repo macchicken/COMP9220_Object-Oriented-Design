@@ -175,14 +175,14 @@ ValidMoved：boolean</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
-      <y>418</y>
-      <w>286</w>
-      <h>44</h>
+      <x>341</x>
+      <y>374</y>
+      <w>132</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=runUpDisk()</panel_attributes>
-    <additional_attributes>10.0;10.0;240.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;50.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -200,7 +200,7 @@ m2=modifyBoard(Step),drawBoard()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>55</x>
-      <y>440</y>
+      <y>407</y>
       <w>286</w>
       <h>44</h>
     </coordinates>
