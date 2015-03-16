@@ -122,7 +122,7 @@ move(x,y)</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-ValidMove(int,int)</panel_attributes>
+ValidMove(Step)</panel_attributes>
     <additional_attributes>430.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -141,11 +141,11 @@ ValidMove(int,int)</panel_attributes>
     <coordinates>
       <x>440</x>
       <y>360</y>
-      <w>150</w>
+      <w>140</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m2=placeDisk(int,int)</panel_attributes>
+m2=placeDisk(Step)</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0;80.0;50.0;10.0;50.0</additional_attributes>
   </element>
   <element>
@@ -193,7 +193,7 @@ m2=runUpDisk()</panel_attributes>
       <h>170</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m2=modifyBoard(int,int),drawBoard()</panel_attributes>
+m2=modifyBoard(Step),drawBoard()</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0;80.0;140.0;10.0;140.0</additional_attributes>
   </element>
   <element>
@@ -213,7 +213,7 @@ disk run up</panel_attributes>
     <coordinates>
       <x>140</x>
       <y>290</y>
-      <w>700</w>
+      <w>710</w>
       <h>380</h>
     </coordinates>
     <panel_attributes>loop</panel_attributes>
