@@ -1,0 +1,63 @@
+Task:
+
+Design a console application, which provide the basic functions, which will be used to build Gomoku game.  Your task is to just design this game and describe it using UML diagrams. No implementation is needed.  This UML design diagrams will be used in the subsequent Assignment 2 for implementation.
+
+Rules of Gomoku (from http://www.vcpr.cz/en/help-and-rules/gomoku-rules)
+
+
+It is a board game for two players who take turns in putting black and white stones on the board. Each players' goal is to create an unbroken row of five stones horizontally, vertically, or diagonally.
+
+Specification: (This is what you need to design)
+
+When the software starts, it displays the empty 15 x 15 grids.  At the each grid, either Black or White stone (circle) can be placed.
+Each player takes 32 disks and chooses one color to use throughout the game.
+Black place a disk first followed by white placing a disk.   
+players take turns in putting their disks on the board.
+The game ends when one of player archived an unbroken row of five stones in the same color.
+DO NOT use any INHERITANCE in the design.
+
+Note: 
+
+Since you don't need to consider any implementation, you can use the following as an example of how it might look like on the console screen if it's implemented.
+$ java -jar Gomoku.jar
+$ ~~~~~~~ Welcome ~~~~~~~~ 
+--------
+--------
+--------
+--------
+--------
+--------
+--------
+--------
+Black's turn: Where do you wish to place your disc?
+Please type x and y locations : 3, 4
+You have placed Black disc at (3, 4)
+--------
+--------
+---X----
+--------
+--------
+--------
+--------
+--------
+White's turn: Where do you wish to place your disc?
+Please type x and y locations : 5, 3
+You have placed White disc at (5, 3)
+
+--------
+--------
+---X----
+--------
+--O-----
+--------
+--------
+--------
+ 
+
+Submission:
+
+You need to submit documents describing:
+
+Provide how you analysed the requirements.  List all objects and functions you've identified from the specification. (40%)
+Provide UML diagrams describing class/class hierarchy and any necessary interaction/activities among objects. (60% : Class Diagrams (30%), Sequence/Activity diagrams (30%))
+These documents should be stored in the folder, whose name is your Student ID.

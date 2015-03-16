@@ -1,0 +1,24 @@
+Specification:
+
+When the software starts, it displays the empty 15 x 15 grids.  At the each grid, either Black or White stone (circle) can be placed.
+Each player takes 32 disks and chooses one color to use throughout the game.
+Black place a disk first followed by white placing a disk.   
+players take turns in putting their disks on the board.
+The game ends when one of player archived an unbroken row of five stones in the same color.
+
+From the specifications, this game involve two players and they play the game on the disk board. At first, player could
+conceptualise to a Player model class, which store the necessary informations, in this case, it should have a counter for the number
+of steps a player plays, a maximum disk the player can have and the colour of disk the player own.
+And also, a list of step is recored in order to keep track of steps the player plays. A player has action for place a disk,
+which acutally store the data for a step, unless the player uses up the disks.
+
+Secondly, disk board conceptualize to a GameBoard model class, that has a 2-dimension array simulates the disk board,
+indicating the horizontal and vertical position of each grid in the board. GameBoard has actions for storing the disks in the board,
+check the each steps is valid in the game before storing the disks data, and a visual action for displaying the board on the
+screen.
+
+What's more, A Game class take the responsibility for controlling the round of a game. Initialise a game by constructing a
+board and 2 players. Then, take a turn for each move which including the actions for players and the gameBoard. Check the state
+of game, it is draw,win or should contine.
+
+For each step a player plays, it models to a Step class, and stores the horizontal and vertical locaiton in the board.
