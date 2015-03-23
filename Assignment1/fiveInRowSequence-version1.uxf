@@ -61,8 +61,8 @@ move(x,y)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>484</x>
-      <y>132</y>
+      <x>528</x>
+      <y>121</y>
       <w>110</w>
       <h>33</h>
     </coordinates>
@@ -72,13 +72,13 @@ move(x,y)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
-      <y>154</y>
+      <x>572</x>
+      <y>143</y>
       <w>33</w>
-      <h>88</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -118,7 +118,7 @@ move(x,y)</panel_attributes>
     <coordinates>
       <x>583</x>
       <y>275</y>
-      <w>198</w>
+      <w>165</w>
       <h>77</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -175,14 +175,14 @@ m2=placeDisk(Step),runUpDisk()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>561</x>
+      <x>583</x>
       <y>462</y>
-      <w>286</w>
+      <w>264</w>
       <h>187</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=modifyBoard(Step),drawBoard()</panel_attributes>
-    <additional_attributes>30.0;10.0;100.0;10.0;100.0;140.0;30.0;140.0</additional_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;140.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
