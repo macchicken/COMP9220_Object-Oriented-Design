@@ -249,8 +249,8 @@ disk placed</panel_attributes>
       <h>88</h>
     </coordinates>
     <panel_attributes>change the current colour at each move,
-use x,y and colourto create a step object
-at each move.</panel_attributes>
+use x,y and colour attribute to create a step
+object at each move.</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

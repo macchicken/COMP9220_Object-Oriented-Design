@@ -162,14 +162,14 @@ m2=[ValidMove]</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>540</x>
       <y>140</y>
-      <w>160</w>
+      <w>130</w>
       <h>450</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=[continue]</panel_attributes>
-    <additional_attributes>140.0;420.0;40.0;420.0;40.0;10.0;110.0;10.0</additional_attributes>
+    <additional_attributes>110.0;420.0;10.0;420.0;10.0;10.0;80.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -222,11 +222,11 @@ m2=[runUpDisk]</panel_attributes>
     <coordinates>
       <x>660</x>
       <y>590</y>
-      <w>160</w>
+      <w>166</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-game has result</panel_attributes>
+gameResult!=null</panel_attributes>
     <additional_attributes>140;50;30;50</additional_attributes>
   </element>
   <element>
