@@ -28,7 +28,7 @@
     <coordinates>
       <x>390</x>
       <y>30</y>
-      <w>600</w>
+      <w>610</w>
       <h>720</h>
     </coordinates>
     <panel_attributes>Gomoku Game
@@ -160,38 +160,15 @@ m2=[ValidMove]</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>620</x>
-      <y>620</y>
-      <w>100</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>Game End</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>660</x>
-      <y>570</y>
-      <w>130</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-m2=[game has result]</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
       <x>510</x>
       <y>140</y>
       <w>160</w>
-      <h>440</h>
+      <h>450</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m2=[continue]</panel_attributes>
+m1=[continue]</panel_attributes>
     <additional_attributes>140.0;420.0;40.0;420.0;40.0;10.0;110.0;10.0</additional_attributes>
   </element>
   <element>
@@ -199,7 +176,7 @@ m2=[continue]</panel_attributes>
     <coordinates>
       <x>680</x>
       <y>140</y>
-      <w>250</w>
+      <w>190</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
@@ -211,11 +188,79 @@ m2=[not ValidMoved]</panel_attributes>
     <coordinates>
       <x>680</x>
       <y>230</y>
-      <w>210</w>
+      <w>170</w>
       <h>360</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=[runUpDisk]</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0;150.0;330.0;10.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>640</x>
+      <y>550</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;70;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Decision</type>
+    <coordinates>
+      <x>650</x>
+      <y>620</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>660</x>
+      <y>590</y>
+      <w>160</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+game has result</panel_attributes>
+    <additional_attributes>140;50;30;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>800</x>
+      <y>620</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>black or white has five in row</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>560</x>
+      <y>630</y>
+      <w>206</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+both players run up disk</panel_attributes>
+    <additional_attributes>110;70;110;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>630</x>
+      <y>700</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>draw</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

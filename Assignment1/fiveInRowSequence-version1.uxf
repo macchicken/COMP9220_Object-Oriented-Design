@@ -111,7 +111,7 @@ m1=ValidMove(Step)</panel_attributes>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[boolean=false|| gameResult!=null] continue():boolean</panel_attributes>
+[bothplayersrunUpDisk=false|| gameResult!=null] continue():boolean</panel_attributes>
     <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
   </element>
   <element>
@@ -123,7 +123,7 @@ m1=ValidMove(Step)</panel_attributes>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-ValidMoved：boolean</panel_attributes>
+ValidMoved: boolean</panel_attributes>
     <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
   </element>
   <element>
@@ -239,5 +239,29 @@ disk placed</panel_attributes>
     </coordinates>
     <panel_attributes>break</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>726</x>
+      <y>132</y>
+      <w>330</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>change the current colour at each move,
+use x,y and colourto create a step object
+at each move.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>726</x>
+      <y>187</y>
+      <w>98</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>33;77;77;33</additional_attributes>
   </element>
 </diagram>
