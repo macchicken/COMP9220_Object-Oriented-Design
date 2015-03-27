@@ -32,8 +32,8 @@
     <panel_attributes>/GameBoard/
 --
 - board: char[][]
-- lengthX: int=15
-- lengthY: int=15
+_- lengthX: int=15_
+_- lengthY: int=15_
 --
 + GameBoard(lengthX,lengthY)
 + modifyBoard(step:Step): void
@@ -66,27 +66,14 @@
     </coordinates>
     <panel_attributes>/Player/
 --
-- maxDisk: int=32
+_- maxDisk: int=32_
 - stepList: Step[maxDisk]
 - colour: char
 - stepCount: int
 --
 + placeDisk(step:Step): void
-- runUpDisk():boolean</panel_attributes>
++ runUpDisk():boolean</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>60</x>
-      <y>360</y>
-      <w>330</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-m1=0..*
-m2=1</panel_attributes>
-    <additional_attributes>310.0;160.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -130,7 +117,9 @@ bg=white</panel_attributes>
       <w>330</w>
       <h>180</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..*
+m1=1</panel_attributes>
     <additional_attributes>10.0;10.0;310.0;160.0</additional_attributes>
   </element>
   <element>
@@ -191,5 +180,16 @@ m2=1</panel_attributes>
     </coordinates>
     <panel_attributes>type=termination</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>370</y>
+      <w>310</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>290.0;150.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

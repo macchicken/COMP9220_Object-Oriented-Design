@@ -63,10 +63,10 @@ m2=Game(lengthX,lengthY)</panel_attributes>
       <x>572</x>
       <y>143</y>
       <w>33</w>
-      <h>176</h>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -85,16 +85,16 @@ m2=Game(lengthX,lengthY)</panel_attributes>
       <x>330</x>
       <y>143</y>
       <w>33</w>
-      <h>297</h>
+      <h>165</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;250.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>55</x>
-      <y>308</y>
+      <y>352</y>
       <w>539</w>
       <h>44</h>
     </coordinates>
@@ -118,7 +118,7 @@ m1=ValidMove(Step)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>55</x>
-      <y>330</y>
+      <y>363</y>
       <w>539</w>
       <h>44</h>
     </coordinates>
@@ -130,31 +130,31 @@ ValidMoved: boolean</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>55</x>
-      <y>418</y>
+      <y>429</y>
       <w>297</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m2=placeDisk(Step),runUpDisk()</panel_attributes>
-    <additional_attributes>10.0;10.0;250.0;10.0</additional_attributes>
+placeDisk(Step)</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>583</x>
-      <y>418</y>
+      <y>440</y>
       <w>264</w>
-      <h>110</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=modifyBoard(Step),drawBoard()</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0;80.0;70.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;50.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>55</x>
-      <y>451</y>
+      <y>319</y>
       <w>297</w>
       <h>44</h>
     </coordinates>
@@ -177,7 +177,7 @@ disk run up:boolean</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>341</x>
-      <y>407</y>
+      <y>429</y>
       <w>253</w>
       <h>44</h>
     </coordinates>
@@ -189,9 +189,9 @@ disk placed</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>572</x>
-      <y>297</y>
+      <y>319</y>
       <w>22</w>
-      <h>66</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -200,7 +200,7 @@ disk placed</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>330</x>
-      <y>418</y>
+      <y>440</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -222,12 +222,12 @@ disk placed</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>572</x>
-      <y>352</y>
+      <y>385</y>
       <w>33</w>
-      <h>88</h>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
@@ -245,12 +245,12 @@ disk placed</panel_attributes>
     <coordinates>
       <x>726</x>
       <y>132</y>
-      <w>330</w>
+      <w>352</w>
       <h>88</h>
     </coordinates>
-    <panel_attributes>change the current colour at each move,
-use x,y and colour attribute to create a step
-object at each move.</panel_attributes>
+    <panel_attributes>the loop changes the current colour at each
+move, use x,y and colour attribute to create a step
+object in each iteration.</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -263,5 +263,61 @@ object at each move.</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;</panel_attributes>
     <additional_attributes>33;77;77;33</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>330</x>
+      <y>286</y>
+      <w>22</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>341</y>
+      <w>33</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>55</x>
+      <y>286</y>
+      <w>297</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+runUpDisk():boolean</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>121</x>
+      <y>11</y>
+      <w>154</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>create a game board and players in the game</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>132</x>
+      <y>77</y>
+      <w>76</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>33;132;55;33</additional_attributes>
   </element>
 </diagram>
