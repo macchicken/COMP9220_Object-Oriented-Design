@@ -99,8 +99,8 @@ m2=Game(lengthX,lengthY)</panel_attributes>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m1=ValidMove(Step)</panel_attributes>
-    <additional_attributes>470.0;10.0;10.0;10.0</additional_attributes>
+[diskRunup==false]:ValidMove(Step)</panel_attributes>
+    <additional_attributes>470.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -118,13 +118,13 @@ m1=ValidMove(Step)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>55</x>
-      <y>363</y>
+      <y>374</y>
       <w>539</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-ValidMoved: boolean</panel_attributes>
-    <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
+m1=validMoved: boolean</panel_attributes>
+    <additional_attributes>10.0;10.0;470.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -135,7 +135,7 @@ ValidMoved: boolean</panel_attributes>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-placeDisk(Step)</panel_attributes>
+[validMoved==true]:placeDisk(Step)</panel_attributes>
     <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
   </element>
   <element>
@@ -159,7 +159,7 @@ m2=modifyBoard(Step),drawBoard()</panel_attributes>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-disk run up:boolean</panel_attributes>
+diskRunup:boolean</panel_attributes>
     <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
   </element>
   <element>
