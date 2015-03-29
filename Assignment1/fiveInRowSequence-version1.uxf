@@ -108,10 +108,10 @@ m2=Game(lengthX,lengthY)</panel_attributes>
       <x>55</x>
       <y>528</y>
       <w>539</w>
-      <h>44</h>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[bothplayersrunUpDisk=false|| gameResult!=null] continue():boolean</panel_attributes>
+[bothplayersrunUpDisk=true|| gameResult!=null] continue():boolean</panel_attributes>
     <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
   </element>
   <element>
