@@ -106,12 +106,12 @@ m2=Game(lengthX,lengthY)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>55</x>
-      <y>528</y>
+      <y>517</y>
       <w>539</w>
-      <h>55</h>
+      <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[bothplayersrunUpDisk=true|| gameResult!=null] continue():boolean</panel_attributes>
+continue():boolean</panel_attributes>
     <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
   </element>
   <element>
@@ -213,7 +213,7 @@ disk placed</panel_attributes>
       <x>572</x>
       <y>418</y>
       <w>22</w>
-      <h>143</h>
+      <h>198</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -233,11 +233,13 @@ disk placed</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>22</x>
-      <y>517</y>
+      <y>550</y>
       <w>616</w>
       <h>55</h>
     </coordinates>
-    <panel_attributes>break</panel_attributes>
+    <panel_attributes>break
+--
+[bothplayersrunUpDisk=true|| gameResult!=null]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -252,17 +254,6 @@ disk placed</panel_attributes>
 move, use x,y and colour attribute to create a step
 object in each iteration.</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>726</x>
-      <y>187</y>
-      <w>98</w>
-      <h>98</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;</panel_attributes>
-    <additional_attributes>33;77;77;33</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -314,10 +305,45 @@ runUpDisk():boolean</panel_attributes>
     <coordinates>
       <x>132</x>
       <y>77</y>
-      <w>76</w>
+      <w>54</w>
       <h>153</h>
     </coordinates>
-    <panel_attributes>lt=&lt;</panel_attributes>
-    <additional_attributes>33;132;55;33</additional_attributes>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>33;132;33;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>726</x>
+      <y>187</y>
+      <w>98</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>33;77;77;33</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>451</x>
+      <y>693</y>
+      <w>352</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>assign the gameResult variable if one of the players
+won or draw, return false if they still can play and
+both still have enough diskes</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>418</x>
+      <y>506</y>
+      <w>120</w>
+      <h>197</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>33;33;99;176</additional_attributes>
   </element>
 </diagram>

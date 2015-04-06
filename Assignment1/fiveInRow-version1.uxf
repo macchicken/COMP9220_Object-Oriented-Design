@@ -17,8 +17,8 @@
 - gameResult: String
 --
 + Game(lengthX:int,lengthY:int)
-+ move(x:int,y:int): void
-+ continue(): boolean</panel_attributes>
+_+ move(x:int,y:int): void_
+_+ continue(): boolean_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
