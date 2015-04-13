@@ -4,7 +4,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>0</x>
+      <x>77</x>
       <y>88</y>
       <w>110</w>
       <h>33</h>
@@ -15,7 +15,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>44</x>
+      <x>121</x>
       <y>110</y>
       <w>33</w>
       <h>110</h>
@@ -26,7 +26,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>44</x>
+      <x>121</x>
       <y>198</y>
       <w>22</w>
       <h>440</h>
@@ -37,7 +37,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
+      <x>132</x>
       <y>198</y>
       <w>209</w>
       <h>77</h>
@@ -49,7 +49,7 @@ m2=Game(lengthX,lengthY)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>528</x>
+      <x>605</x>
       <y>121</y>
       <w>110</w>
       <h>33</h>
@@ -60,7 +60,7 @@ m2=Game(lengthX,lengthY)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>572</x>
+      <x>649</x>
       <y>143</y>
       <w>33</w>
       <h>198</h>
@@ -71,7 +71,7 @@ m2=Game(lengthX,lengthY)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>286</x>
+      <x>363</x>
       <y>121</y>
       <w>110</w>
       <h>33</h>
@@ -82,7 +82,7 @@ m2=Game(lengthX,lengthY)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
+      <x>407</x>
       <y>143</y>
       <w>33</w>
       <h>165</h>
@@ -93,7 +93,7 @@ m2=Game(lengthX,lengthY)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
+      <x>132</x>
       <y>352</y>
       <w>539</w>
       <h>44</h>
@@ -105,7 +105,7 @@ m2=Game(lengthX,lengthY)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
+      <x>132</x>
       <y>517</y>
       <w>539</w>
       <h>44</h>
@@ -117,7 +117,7 @@ continue():boolean</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
+      <x>132</x>
       <y>374</y>
       <w>539</w>
       <h>44</h>
@@ -129,7 +129,7 @@ m1=validMoved: boolean</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
+      <x>132</x>
       <y>429</y>
       <w>297</w>
       <h>44</h>
@@ -141,7 +141,7 @@ m1=validMoved: boolean</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>583</x>
+      <x>660</x>
       <y>440</y>
       <w>264</w>
       <h>88</h>
@@ -153,7 +153,7 @@ m2=modifyBoard(Step),drawBoard()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
+      <x>132</x>
       <y>319</y>
       <w>297</w>
       <h>44</h>
@@ -165,7 +165,7 @@ diskRunup:boolean</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>11</x>
+      <x>88</x>
       <y>264</y>
       <w>836</w>
       <h>418</h>
@@ -176,7 +176,7 @@ diskRunup:boolean</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>572</x>
+      <x>649</x>
       <y>319</y>
       <w>22</w>
       <h>77</h>
@@ -187,7 +187,7 @@ diskRunup:boolean</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>330</x>
+      <x>407</x>
       <y>440</y>
       <w>22</w>
       <h>66</h>
@@ -198,7 +198,7 @@ diskRunup:boolean</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>572</x>
+      <x>649</x>
       <y>418</y>
       <w>22</w>
       <h>198</h>
@@ -209,7 +209,7 @@ diskRunup:boolean</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>572</x>
+      <x>649</x>
       <y>385</y>
       <w>33</w>
       <h>55</h>
@@ -220,7 +220,7 @@ diskRunup:boolean</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>22</x>
+      <x>99</x>
       <y>550</y>
       <w>616</w>
       <h>55</h>
@@ -233,7 +233,7 @@ diskRunup:boolean</panel_attributes>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>726</x>
+      <x>803</x>
       <y>132</y>
       <w>352</w>
       <h>88</h>
@@ -246,7 +246,7 @@ object in each iteration.</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>330</x>
+      <x>407</x>
       <y>286</y>
       <w>22</w>
       <h>66</h>
@@ -257,7 +257,7 @@ object in each iteration.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
+      <x>407</x>
       <y>341</y>
       <w>33</w>
       <h>121</h>
@@ -268,7 +268,7 @@ object in each iteration.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>55</x>
+      <x>132</x>
       <y>286</y>
       <w>297</w>
       <h>44</h>
@@ -280,7 +280,7 @@ runUpDisk():boolean</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>121</x>
+      <x>198</x>
       <y>11</y>
       <w>154</w>
       <h>99</h>
@@ -291,7 +291,7 @@ runUpDisk():boolean</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>132</x>
+      <x>209</x>
       <y>77</y>
       <w>54</w>
       <h>153</h>
@@ -302,7 +302,7 @@ runUpDisk():boolean</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>726</x>
+      <x>803</x>
       <y>187</y>
       <w>98</w>
       <h>98</h>
@@ -313,7 +313,7 @@ runUpDisk():boolean</panel_attributes>
   <element>
     <type>com.umlet.element.Note</type>
     <coordinates>
-      <x>451</x>
+      <x>528</x>
       <y>693</y>
       <w>352</w>
       <h>88</h>
@@ -326,12 +326,57 @@ both still have enough diskes</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>418</x>
+      <x>495</x>
       <y>506</y>
       <w>109</w>
       <h>208</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>33;33;88;187</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>33</x>
+      <y>198</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+main()</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>0</x>
+      <y>66</y>
+      <w>66</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>22</x>
+      <y>198</y>
+      <w>22</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>22</x>
+      <y>132</y>
+      <w>33</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

@@ -7,7 +7,7 @@
       <x>300</x>
       <y>210</y>
       <w>210</w>
-      <h>150</h>
+      <h>170</h>
     </coordinates>
     <panel_attributes>/Game/
 --
@@ -18,7 +18,8 @@
 --
 + Game(lengthX:int,lengthY:int)
 _+ move(x:int,y:int): void_
-_+ continue(): boolean_</panel_attributes>
+_+ continue(): boolean_
+_+ main():void_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
