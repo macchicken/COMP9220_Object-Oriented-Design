@@ -155,7 +155,7 @@ IPlay
 --
 # checkResult: String
 --
-+ check(checkObjes: Map): boolean
+/+ check(checkObjes: Map): boolean/
 </panel_attributes>
     <additional_attributes/>
   </element>
