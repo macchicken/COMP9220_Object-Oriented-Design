@@ -26,7 +26,7 @@ _+ main(): void_
       <w>210</w>
       <h>200</h>
     </coordinates>
-    <panel_attributes>Play
+    <panel_attributes>GomokuPlay
 --
 - player1: char
 - player2: char
@@ -50,7 +50,7 @@ _+ main(): void_
       <w>260</w>
       <h>140</h>
     </coordinates>
-    <panel_attributes>Check
+    <panel_attributes>GomokuPlayCheck
 --
 - maxDisks: int
 - winner: char
@@ -92,8 +92,8 @@ _+ main(): void_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>660</y>
+      <x>460</x>
+      <y>670</y>
       <w>210</w>
       <h>90</h>
     </coordinates>
@@ -109,13 +109,13 @@ _+ main(): void_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>600</y>
-      <w>170</w>
-      <h>80</h>
+      <x>330</x>
+      <y>690</y>
+      <w>150</w>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;150.0;60.0</additional_attributes>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
