@@ -66,6 +66,7 @@ _+ main():void_
     <panel_attributes>Check
 --
 - maxDisks: int
+- winner: char
 --
 + isDraw(): boolean
 + checkResult(currentPlayer:char,matrix:char[][]): boolean
