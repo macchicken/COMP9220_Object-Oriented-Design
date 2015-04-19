@@ -11,8 +11,8 @@
     </coordinates>
     <panel_attributes>Gomoku
 --
--play: Play
--check: Check
+- play: Play
+- check: Check
 --
 _+ main():void_
 + displayBoard(): void
@@ -32,11 +32,11 @@ _+ main():void_
     </coordinates>
     <panel_attributes>Play
 --
--player1: char
--player2: char
--playerCurrent: char
--coordinate: Coordinate
--board: Board
+- player1: char
+- player2: char
+- playerCurrent: char
+- board: Board
+- count: int
 --
 + getPlayer(): char
 + switchPlayer(): void
@@ -61,12 +61,11 @@ _+ main():void_
       <x>670</x>
       <y>400</y>
       <w>370</w>
-      <h>140</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Check
 --
--maxDisks: int
--count: int
+- maxDisks: int
 --
 + isDraw(): boolean
 + checkResult(currentPlayer:char,matrix:char[][]): boolean
@@ -95,7 +94,7 @@ _+ main():void_
     </coordinates>
     <panel_attributes>Board
 --
--matrix: char[][]
+- matrix: char[][]
 --
 + Board(lenX:int, lenY:int)
 + disPlayBoard(): void
@@ -117,8 +116,8 @@ _+ main():void_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>660</y>
+      <x>280</x>
+      <y>680</y>
       <w>210</w>
       <h>90</h>
     </coordinates>
@@ -134,12 +133,12 @@ _+ main():void_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
+      <x>280</x>
       <y>570</y>
-      <w>50</w>
-      <h>110</h>
+      <w>130</w>
+      <h>130</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;30.0;90.0</additional_attributes>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;110.0</additional_attributes>
   </element>
 </diagram>
