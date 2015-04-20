@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>170</x>
-      <y>80</y>
+      <x>40</x>
+      <y>40</y>
       <w>210</w>
       <h>100</h>
     </coordinates>
@@ -14,7 +14,8 @@
 - play: IPlay
 --
 _+ main(): void_
-- run(): void
++ Gomoku(play:GomokuPlay)
+- start(): void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -22,9 +23,9 @@ _+ main(): void_
     <id>UMLClass</id>
     <coordinates>
       <x>100</x>
-      <y>410</y>
-      <w>210</w>
-      <h>200</h>
+      <y>380</y>
+      <w>510</w>
+      <h>230</h>
     </coordinates>
     <panel_attributes>GomokuPlay
 --
@@ -35,8 +36,10 @@ _+ main(): void_
 - check: CheckRule
 - count: int
 --
++ GomokuPlay(play1:char,play2:char,lenX:int,lenY:int,check:GomokuPlayCheck)
 + play(): void
 + end(): void
++ check(): void
 - switchPlayer(): void
 - inputCoordinate(): void
 </panel_attributes>
@@ -45,8 +48,8 @@ _+ main(): void_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
-      <y>430</y>
+      <x>760</x>
+      <y>410</y>
       <w>260</w>
       <h>140</h>
     </coordinates>
@@ -55,6 +58,7 @@ _+ main(): void_
 - maxDisks: int
 - winner: char
 --
++ GomokuPlayCheck(maxDisks:int)
 + check(checkObjes: Map): boolean
 - isDraw(int count): boolean
 - winOrDraw(int count): boolean</panel_attributes>
@@ -121,7 +125,7 @@ _+ main(): void_
     <id>UMLClass</id>
     <coordinates>
       <x>40</x>
-      <y>260</y>
+      <y>230</y>
       <w>210</w>
       <h>100</h>
     </coordinates>
@@ -129,25 +133,26 @@ _+ main(): void_
 IPlay
 --
 + play(): void
-+ end(): void</panel_attributes>
++ end(): void
++ check(): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>110</x>
-      <y>170</y>
-      <w>110</w>
-      <h>110</h>
+      <y>130</y>
+      <w>30</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>280</y>
+      <x>710</x>
+      <y>260</y>
       <w>260</w>
       <h>90</h>
     </coordinates>
@@ -155,26 +160,26 @@ IPlay
 --
 # checkResult: String
 --
-/+ check(checkObjes: Map): boolean/
+/+ check(checkObjs: Map): boolean/
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>310</y>
-      <w>190</w>
-      <h>160</h>
+      <x>600</x>
+      <y>340</y>
+      <w>150</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>10.0;140.0;170.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;130.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>620</x>
-      <y>360</y>
+      <x>860</x>
+      <y>340</y>
       <w>30</w>
       <h>90</h>
     </coordinates>
@@ -184,34 +189,34 @@ IPlay
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>350</y>
-      <w>50</w>
+      <x>160</x>
+      <y>320</y>
+      <w>30</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>30.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>680</x>
-      <y>180</y>
-      <w>160</w>
-      <h>120</h>
+      <x>920</x>
+      <y>130</y>
+      <w>30</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;100.0;140.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
       <x>820</x>
-      <y>150</y>
+      <y>50</y>
       <w>180</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>checkObjes means it holds any necessary item for determine the game result according to the rules</panel_attributes>
+    <panel_attributes>checkObjs means it holds any necessary item for determine the game result according to the rules</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
