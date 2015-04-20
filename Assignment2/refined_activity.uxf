@@ -312,13 +312,13 @@ m2=Yes</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>520</x>
-      <y>740</y>
+      <y>750</y>
       <w>90</w>
-      <h>50</h>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m2=Yes</panel_attributes>
-    <additional_attributes>10.0;20.0;70.0;20.0</additional_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -330,5 +330,49 @@ m2=Yes</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>880</x>
+      <y>540</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>whether the current play wins</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>560</y>
+      <w>280</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;80.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>900</x>
+      <y>700</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>whether both of players run out of disks</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>730</y>
+      <w>300</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;30.0;280.0;10.0</additional_attributes>
   </element>
 </diagram>
