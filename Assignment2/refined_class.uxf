@@ -58,9 +58,9 @@ _+ main():void_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>670</x>
+      <x>650</x>
       <y>400</y>
-      <w>370</w>
+      <w>430</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>Check
@@ -69,7 +69,7 @@ _+ main():void_
 - winner: char
 --
 + isDraw(): boolean
-+ checkResult(currentPlayer:char,matrix:char[][]): boolean
++ checkResult(currentPlayer:char,count:int,matrix:char[][]): boolean
 + getWiiner(): char
 </panel_attributes>
     <additional_attributes/>
@@ -79,11 +79,11 @@ _+ main():void_
     <coordinates>
       <x>590</x>
       <y>250</y>
-      <w>130</w>
+      <w>110</w>
       <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;150.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;150.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
