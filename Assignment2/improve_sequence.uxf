@@ -163,13 +163,13 @@ m1=3: start():void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>231</x>
-      <y>352</y>
+      <y>385</y>
       <w>308</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[nottheEnd==true]: 4: play():void</panel_attributes>
-    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+m2=4: play():void</panel_attributes>
+    <additional_attributes>260.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
@@ -179,7 +179,7 @@ m1=3: start():void</panel_attributes>
       <w>1210</w>
       <h>539</h>
     </coordinates>
-    <panel_attributes>loop</panel_attributes>
+    <panel_attributes>loop[while nottheEnd==true]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -410,19 +410,6 @@ m1=5.3: winOrDraw(count:int), 5.3.1: isDraw(count:int)</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0;80.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>704</x>
-      <y>814</y>
-      <w>297</w>
-      <h>55</h>
-    </coordinates>
-    <panel_attributes>break
---
-[nottheEnd==false]</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLGeneric</id>
     <coordinates>
       <x>220</x>
@@ -449,7 +436,7 @@ m1=5.3: winOrDraw(count:int), 5.3.1: isDraw(count:int)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>616</x>
-      <y>33</y>
+      <y>22</y>
       <w>220</w>
       <h>33</h>
     </coordinates>
@@ -460,12 +447,12 @@ m1=5.3: winOrDraw(count:int), 5.3.1: isDraw(count:int)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>726</x>
-      <y>55</y>
+      <y>44</y>
       <w>33</w>
-      <h>77</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -701,7 +688,7 @@ use</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>286</x>
-      <y>495</y>
+      <y>473</y>
       <w>132</w>
       <h>66</h>
     </coordinates>
@@ -714,10 +701,10 @@ use</panel_attributes>
       <x>407</x>
       <y>506</y>
       <w>88</w>
-      <h>55</h>
+      <h>33</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>60.0;10.0;10.0;30.0</additional_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
