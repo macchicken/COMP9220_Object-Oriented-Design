@@ -1,0 +1,21 @@
+Task:
+
+Build a console application, which implements the basic Gomoku/Renju game.  You're required to use the application previously designed by one of your group members in Assignemnt 2 (You're not allowed to swap your assignement 2 with your friend, whome you've already swapped your Assigment 1 with). In order to complete your task, you are also required to satisfy the following specifications
+
+Specification:
+
+Use at least two "Design Patterns"
+In the new Gomoku game, each player now must complete each move within 60 seconds.  If a player did not complete his/her move within this time limie, the player loses his/her turn and the opponent will make his/her move.
+The Game now needs to support "Undo" and "Redo" functions.  The "undo" function must be able to trace each move back to the begining of the game.  At the any given time, the "redo" funciton must be able to re-play "undo-ed" moves.
+The player(s) should be able to specify how many moves s/he wish to "undo" or "redo".
+Submission:
+
+You need to submit documents describing:
+
+UML diagrams describing class/class hierarchy and any necessary interaction/activities among objects/classes. (20 %)
+Provide explanation on how previous design was modified in order to include the new specifications. Make sure to refer to the UML diagrams of the previous design from the Assignment 2. (30%)
+Describe which design pattern was used and explain the reason why you have chosen those design patterns. (30%)
+Code (20%).
+Documents form 1, 2, and 3  should be compiled into one PDF file and store it along with your source code and executable .class files in a folder, whose name is your Student ID.
+
+NOTE: please just use zip or gzip and DO NOT USE .rar or .7z
