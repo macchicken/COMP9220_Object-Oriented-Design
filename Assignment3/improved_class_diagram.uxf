@@ -4,15 +4,15 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
+      <x>240</x>
       <y>110</y>
-      <w>220</w>
+      <w>280</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>/ChessGameBuilder/
 --
 --
-/+ buildGameBoard()/
+/+ buildGameBoard(mode:int,timeout:long)/
 /+ buildGameRule()/
 /+ getChessGame():GomokuPlay/
 </panel_attributes>
@@ -21,10 +21,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
+      <x>1010</x>
       <y>120</y>
       <w>380</w>
-      <h>230</h>
+      <h>210</h>
     </coordinates>
     <panel_attributes>/BoardGame/
 --
@@ -39,35 +39,34 @@
 + getsteps():int
 + WinJudge():int
 /+ displayBoard()/
-+ setposition(p:String,c:String)
-/+ modifyBoard(p:String,c:String,ct:CommandType):boolean/</panel_attributes>
+/+ setposition(p:String,c:String)/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
-      <y>400</y>
+      <x>1010</x>
+      <y>380</y>
       <w>380</w>
-      <h>160</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>GomokuBoard
 --
 - current: String
-- careTaker: GomokuCareTaker
+- steps: int=0
 --
-+ GomokuBoard()
++ GomokuBoard(lengthX:int,lengthY,int)
 + setup()
 + WinJudge():int
 + displayBoard()
-+ modifyBoard(p:String,c:String,ct:CommandType):boolean</panel_attributes>
++ setposition(p:String,c:String)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>980</x>
-      <y>340</y>
+      <x>1100</x>
+      <y>320</y>
       <w>30</w>
       <h>80</h>
     </coordinates>
@@ -77,15 +76,15 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>170</x>
+      <x>250</x>
       <y>340</y>
-      <w>230</w>
+      <w>270</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>GomokuGameBuilder
 --
 --
-+ buildGameBoard()
++ buildGameBoard(mode:int,timeout:long)
 + buildGameRule()
 + getChessGame(): GomokuPlay
 </panel_attributes>
@@ -94,7 +93,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>400</x>
       <y>200</y>
       <w>30</w>
       <h>160</h>
@@ -105,22 +104,22 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>140</x>
+      <x>190</x>
       <y>0</y>
-      <w>260</w>
+      <w>400</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>ChessGameDirector
 --
 --
-+ construct(builder: ChessGameBuilder)
++ construct(builder: ChessGameBuilder,mode:int,timeout:long)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
+      <x>430</x>
       <y>50</y>
       <w>30</w>
       <h>80</h>
@@ -131,7 +130,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>460</x>
+      <x>580</x>
       <y>340</y>
       <w>380</w>
       <h>200</h>
@@ -141,22 +140,21 @@
 - board: BoardGame
 - end: boolean
 - winner: int
+- reader: ChessGameReader
 - timeout: long
 --
 + GomokuPlay(timeout: long)
 + start()
-- validCommand(p: String):CommandType
 - processCommand(p:String,player:Stirng):CommandType
 - displayResult()
 - switchPlayer():String
-
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
+      <x>510</x>
       <y>360</y>
       <w>90</w>
       <h>40</h>
@@ -168,19 +166,18 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>260</x>
-      <y>430</y>
-      <w>720</w>
-      <h>190</h>
+      <x>420</x>
+      <y>220</y>
+      <w>610</w>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>lt=&lt;.
-&lt;&lt;create&gt;&gt;</panel_attributes>
-    <additional_attributes>700.0;130.0;700.0;170.0;10.0;170.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>590.0;20.0;10.0;20.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>120</x>
       <y>570</y>
       <w>250</w>
       <h>60</h>
@@ -194,7 +191,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>170</x>
+      <x>290</x>
       <y>430</y>
       <w>80</w>
       <h>160</h>
@@ -206,8 +203,8 @@ m1=&lt;&lt;create&gt;&gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>630</y>
+      <x>610</x>
+      <y>590</y>
       <w>320</w>
       <h>100</h>
     </coordinates>
@@ -223,29 +220,18 @@ m1=&lt;&lt;create&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>190</y>
-      <w>200</w>
-      <h>170</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;180.0;10.0;180.0;150.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>820</x>
-      <y>550</y>
-      <w>200</w>
-      <h>110</h>
+      <x>920</x>
+      <y>600</y>
+      <w>90</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>180.0;10.0;180.0;90.0;10.0;90.0</additional_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
+      <x>630</x>
       <y>110</y>
       <w>200</w>
       <h>60</h>
@@ -259,29 +245,18 @@ _+ main(args[]: String)_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
+      <x>510</x>
       <y>140</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>160</y>
-      <w>30</w>
-      <h>200</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>660</x>
+      <x>780</x>
       <y>190</y>
       <w>250</w>
       <h>170</h>
@@ -292,19 +267,19 @@ _+ main(args[]: String)_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
+      <x>580</x>
       <y>20</y>
-      <w>240</w>
+      <w>170</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;220.0;10.0;220.0;90.0</additional_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
-      <y>670</y>
+      <x>750</x>
+      <y>770</y>
       <w>260</w>
       <h>160</h>
     </coordinates>
@@ -314,40 +289,40 @@ _+ main(args[]: String)_
 - y: int
 - c: String
 --
-+ Stone()
-+ Stone(x: int, y :int, c: String)
-+ getX(): int
-+ getY(): int
-+ getC(): String
+- Stone()
+- Stone(x: int, y :int, c: String)
+- getX(): int
+- getY(): int
+- getC(): String
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1020</x>
-      <y>550</y>
-      <w>30</w>
-      <h>140</h>
+      <x>870</x>
+      <y>710</y>
+      <w>140</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;120.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>660</x>
-      <y>720</y>
-      <w>310</w>
-      <h>70</h>
+      <x>790</x>
+      <y>680</y>
+      <w>30</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0;290.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
+      <x>140</x>
       <y>240</y>
       <w>240</w>
       <h>60</h>
@@ -361,7 +336,7 @@ _+ main(args[]: String)_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>60</x>
+      <x>180</x>
       <y>290</y>
       <w>30</w>
       <h>300</h>
@@ -372,7 +347,7 @@ _+ main(args[]: String)_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
+      <x>370</x>
       <y>260</y>
       <w>660</w>
       <h>30</h>
@@ -383,8 +358,8 @@ _+ main(args[]: String)_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>640</y>
+      <x>410</x>
+      <y>550</y>
       <w>130</w>
       <h>100</h>
     </coordinates>
@@ -400,60 +375,128 @@ UNDO
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>470</x>
       <y>490</y>
-      <w>200</w>
-      <h>170</h>
+      <w>130</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;150.0;10.0;10.0;180.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>350</x>
-      <y>780</y>
-      <w>530</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>Tools
---
-_+ readInput(timeout: long):String_
-_- readInputStreamWithTimeout(is: InputStream,buf: byte[],timeoutMillis: long):String_
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>370</x>
-      <y>510</y>
-      <w>110</w>
-      <h>290</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;270.0;10.0;10.0;90.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>80</x>
-      <y>770</y>
-      <w>200</w>
+      <x>0</x>
+      <y>720</y>
+      <w>220</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>It provides a function for reading input from standard input stream with specific timout, return null if no input within the time range</panel_attributes>
+    <panel_attributes>It wraps java.util.Scanner as its attribute and determines whether to provide a function for reading input from standard input stream with specific timout</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>780</y>
-      <w>100</w>
+      <x>210</x>
+      <y>730</y>
+      <w>60</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>80.0;30.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>40.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>160</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>720</y>
+      <w>480</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>ChessGameReader
+--
+- scan: Scanner
+- timeouton: boolean
+--
+ChessGameReader(timeouton: boolean)
++ nextLine(timeout: long)
++ close()
+- readInput(timeoutMillis:long)
+- readInputStreamWithTimeout(is:InputStream,buf:byte[],timeoutMillis:long)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>990</x>
+      <y>590</y>
+      <w>380</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>GomokuModeTwoBoard
+--
+- careTaker: GomokuCareTaker
+--
++ GomokuModeTwoBoard(lengthX:int,lengthY,int)
++ setup()
++ WinJudge():int
++ displayBoard()
++ setposition(p:String,c:String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1210</x>
+      <y>520</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>530</y>
+      <w>100</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;190.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1190</x>
+      <y>780</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>call super(lengthX,lengthY) in the constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1230</x>
+      <y>730</y>
+      <w>70</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;50.0</additional_attributes>
   </element>
 </diagram>
