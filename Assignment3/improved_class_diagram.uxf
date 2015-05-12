@@ -52,8 +52,8 @@
     </coordinates>
     <panel_attributes>GomokuBoard
 --
-- current: String
-- steps: int=0
+# current: String
+# steps: int=0
 --
 + GomokuBoard(lengthX:int,lengthY,int)
 + setup()
