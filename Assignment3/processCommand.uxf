@@ -24,10 +24,9 @@
       <w>520</w>
       <h>190</h>
     </coordinates>
-    <panel_attributes>alt
+    <panel_attributes>opt
 --
-[command==null] : break
---</panel_attributes>
+                                              [command!=null]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
