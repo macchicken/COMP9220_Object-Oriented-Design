@@ -1,0 +1,30 @@
+This is the last assignment for this course. It is a group assignment and all group members are required to equally contribute towards achieving this assignment. If members' contributions are not equal, the group needs to specify individual's contribution in the form of percentage on the Assignment coversheet.
+
+Task:
+
+Build an application, which implements the basic Checkers game. You're required to use the software design previously developed for the Assignment 3. 
+
+your group needs to discuss and agree which previous assignment (Assignment 3) your group is going to use. The group needs to justify why this assignment 3 has been chosen with respect to its design and implementation.
+You are also required to satisfy the following specifications
+Specification:
+
+You need to maintain all the previous requirements provided from Assignment 1 to Assignment 3.
+You need to design and code at least one "Java Generic class". This is different from just using a class in the standard java.util package.  
+In addition to the two design pattern used in the Assignment 3, use two more different design patterns.
+Your game now needs to support the game of " Checkers" (example description of this game can be found at http://www.ducksters.com/games/checkers_rules.php ) in addition to the game of Othello.  
+You should re-use as many classes as possible from your Assignment 3.  
+Submission:
+
+You need to submit documents describing:
+
+(10%) Provide the justification on why the particular assignment 3 was chosen with respect to its design and implementation.
+(20%)Provide explanation on the Java Generics class your group designed and implemented. You should explain what sort of benefits developer would receive from the use of your Java Generics class.
+(30%)Provide UML diagrams describing class/class hierarchy and any necessary interaction/activities among objects.
+(30%)Provide explanation on the new design including
+which classes are the new ones and which classes were from the previous design.  It should be noted that your design should reuse the previous design as much as you can.
+Two new design pattern used to achieve this assignment.  Explain why those selected design patterns are appropriate.  
+(10%)Code.
+These documents should be compiled into a single PDF file.
+
+NOTE: please just use zip or gzip and DO NOT USE .rar or .7z
+
