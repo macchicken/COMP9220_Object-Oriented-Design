@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>0</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Game
+--
+- play: IPlay
+--
+_+ main(): void_
++ Gomoku(play:GomokuPlay)
++ Checker(play:Checker)
+- start(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>252</y>
+      <w>357</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>GomokuPlay
+--
+- player1: char
+- player2: char
+- playerCurrent: char
+- board: Board
+- check: CheckRule
+- count: int
+--
++ GomokuPlay(play1:char,play2:char,lenX:int,lenY:int,check:GomokuPlayCheck)
++ play(): void
++ end(): void
++ check(): void
+- switchPlayer(): void
+- inputCoordinate(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>763</x>
+      <y>763</y>
+      <w>182</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>GomokuPlayCheck
+--
+- maxDisks: int
+- winner: char
+--
++ GomokuPlayCheck(maxDisks:int)
++ check(checkObjes: Map): boolean
+- isDraw(int count): boolean
+- winOrDraw(int count): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>238</x>
+      <y>644</y>
+      <w>231</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Board
+--
+~ matrix: char[][]
+_- BOARD: Board_
+--
+- Board()
+_+ getInstance(): Board_
++ initializeBoard(int, int) : void
++ getBoard(): char[][]
++ getChar(int, int): char
++ setBoard(int, int, char): void
++ setNull(): void
++ disPlayBoard(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>420</y>
+      <w>273</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>370.0;10.0;370.0;270.0;10.0;270.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>273</x>
+      <y>819</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Coordinate
+--
+- x: int
+- y: int
+--
++ Coordinate(x:int, y:int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>770</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>126</y>
+      <w>147</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+IPlay
+--
++ final use():void
++ create():Check
++ play(): void
++ end(): void
++ check(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>77</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>658</x>
+      <y>644</y>
+      <w>182</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+/CheckRule/
+--
+# checkResult: String
+--
+/+ check(checkObjs: Map): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>420</y>
+      <w>21</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>700</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>609</x>
+      <y>210</y>
+      <w>21</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>252</y>
+      <w>357</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>CheckersPlay
+--
+- player1: char
+- player2: char
+- playerCurrent: char
+- keyboard: Scanner
+- stepCount: int
+- maxRedoTimes: int
+- tt: TimeThread
+- bg: Board
+- check: CheckRule
+- coordinate: Coordinate
+- caretaker : Caretaker
+- originator: Originator
+--
++ CheckersPlay(char, char, int, int, CheckRule)
++ switchPlayer(): void
++ displayBoard(): void
++ play(): void
++ input(): boolean
++ reconsider(): void
++ undoSteps(int): void
++ reReconsider(): void
++ redoStep(): void
++ getP1Num(): int
++ getP2Num(): int
++ end(): void
++ check(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>525</x>
+      <y>210</y>
+      <w>21</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>315</x>
+      <y>560</y>
+      <w>21</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>560</y>
+      <w>168</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0;220.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>546</x>
+      <y>763</y>
+      <w>182</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>CheckersCheck
+--
+- maxDisks: int
+- winner: char
+--
++ CheckersCheck(maxDisks:int)
++ check(checkObjes: Map): boolean
+- isDraw(int count): boolean
+- winOrDraw(int count): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>686</x>
+      <y>700</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>644</x>
+      <y>161</y>
+      <w>357</w>
+      <h>525</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>280.0;730.0;490.0;730.0;490.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>7</x>
+      <y>462</y>
+      <w>147</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>TimeThread
+--
+- thread: Thread
+- totalTime: int
+- passedTime: int
+- runTimes: int
+--
++ TimeThread()
++ start(int): void
++ run(): void
++ stop(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>147</x>
+      <y>539</y>
+      <w>77</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
